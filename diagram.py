@@ -21,4 +21,5 @@ with Diagram("IS 436 ", show=False, direction="TB"):
     with Cluster("Group Cluster"):
         source= PHP("Backend") >> SQL("DB") >> PostgreSQL("PGaDmin")
 
+    client << source
     client >> source
